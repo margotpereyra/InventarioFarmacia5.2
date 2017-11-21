@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace InventarioFarmacia\Events;
 
 abstract class Event
 {

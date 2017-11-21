@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace InventarioFarmacia\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
