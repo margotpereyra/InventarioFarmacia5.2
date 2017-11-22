@@ -160,20 +160,7 @@
 	</nav>
 	<div class="content-wrapper">
 		<div class="container-fluid">
-			<!-- Breadcrumbs-->
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="#">Dashboard</a>
-				</li>
-				<li class="breadcrumb-item active">My Dashboard</li>
-			</ol>
-			<!-- Body -->
-			<div class="row">
-				<div class="col-12">
-					@yield('contenido')
-				</div>
-			</div>
-			<!-- Fin Body -->
+			@yield('contenido')
 		</div>
 		<!-- /.container-fluid-->
 		<!-- /.content-wrapper-->
