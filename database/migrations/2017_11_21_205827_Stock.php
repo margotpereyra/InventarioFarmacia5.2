@@ -14,15 +14,17 @@ class Stock extends Migration
     {
         Schema::create('Stock',function (Blueprint $table) {
             $table->increments('Id_Stock')->index();
-            $table->string('Stock_Producto');
-            $table->string('Stock_Cantidad');
-            $table->string('Stock_Fecha vencimiento');
-            $table->string('Stock_Fecha fabricacion');
-            $table->string('Stock_Fecha compra');
-            $table->string('Stock_Precio compra');
-            $table->string('Stock_Precio venta');
-            $table->string('Stock_Tipo');
-            $table->string('Stock_Medida');
+            $table->string('Producto_Stock');
+            $table->string('Cantidad_Stock');
+            $table->string('Fecha_Vencimiento_Stock');
+            $table->string('Fecha_Fabricacion_Stock');
+            $table->string('Fecha_Compra_Stock');
+            $table->string('Tipo_Stock');
+            $table->string('Medida_Stock');
+            $table->integer('Id_Sucursal')->unsigned();
+            $table->timestamps();
+
+            $table->foreign('Id_Sucursal')->references('Id_Sucursal')->on('Farmacia')->onDelete('cascade');
         });
     }
 

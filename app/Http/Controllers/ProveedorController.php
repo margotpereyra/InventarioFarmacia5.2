@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use InventarioFarmacia\Http\Requests;
 
-class Stock extends Controller
+class ProveedorController extends Controller
 {
     //
 }
