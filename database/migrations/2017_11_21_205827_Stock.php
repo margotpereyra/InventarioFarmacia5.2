@@ -21,10 +21,10 @@ class Stock extends Migration
             $table->string('Fecha_Compra_Stock');
             $table->string('Tipo_Stock');
             $table->string('Medida_Stock');
-            $table->integer('Id_Sucursal')->unsigned();
+            $table->integer('Id_Producto')->unsigned();
             $table->timestamps();
 
-            $table->foreign('Id_Sucursal')->references('Id_Sucursal')->on('Farmacia')->onDelete('cascade');
+            $table->foreign('Id_Producto')->references('Id_Producto')->on('Producto')->onDelete('cascade');
         });
     }
 

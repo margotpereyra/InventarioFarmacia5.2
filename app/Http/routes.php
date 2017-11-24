@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::resource('almacen/stock','StockController');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

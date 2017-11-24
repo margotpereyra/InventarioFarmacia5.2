@@ -20,9 +20,6 @@ class Producto extends Migration
             $table->string('Estado_Producto');
             $table->text('Detalle_Producto');
 
-            /// FK
-            //            ID_TIPO_PRODUCTO     int(12),
-            //            ID_SUCURSAL          int(12),
         });
     }
 
